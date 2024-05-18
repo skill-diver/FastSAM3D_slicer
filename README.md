@@ -49,9 +49,4 @@ step 5: the extension will now be available here
 - interactions
   - include and exclude points
 
-      eprint={2403.09827},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
-}
-```
 
