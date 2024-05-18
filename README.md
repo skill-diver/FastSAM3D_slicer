@@ -1,12 +1,6 @@
 # Fast Segment Anything Model in 3D Medical Image (FastSAM3D): A 3D Slicer Extension for FastSAM3D
 
-[paper](https://arxiv.org/abs/2403.09827)
-\
-[FastSAM3D code](https://github.com/arcadelab/FastSAM3D)
-\
-[video](https://youtu.be/oJ9ZhnPWqSs)
-\
-[ARCADE lab](https://arcade.cs.jhu.edu/), [Johns Hopkins University](https://www.jhu.edu/)
+[FastSAM3D code](https://anonymous.4open.science/r/FastSAM3D-v1)
 \
 ![Results](utils/results.PNG)
 
@@ -17,7 +11,6 @@
   - [Before You Try ](#before-you-try-)
   - [How to Use ](#how-to-use-)
     - [Features ](#features-)
-  - [Citation ](#citation-)
 
 ## Introduction <a name="introduction"></a>
 What are SAM, SAMMed3D, FastSAM3D and FastSAM3D_slicer?
@@ -55,14 +48,7 @@ step 5: the extension will now be available here
   - SAMMed3D
 - interactions
   - include and exclude points
-## Citation <a name="citation"></a>
-If you use FastSAM3D_slicer in your research, please consider use the following BibTeX entry.
 
-```bibtex
-@misc{shen2024fastsam3d,
-      title={FastSAM3D: An Efficient Segment Anything Model for 3D Volumetric Medical Images}, 
-      author={Yiqing Shen and Jingxing Li and Xinyuan Shao and Blanca Inigo Romillo and Ankush Jindal and David Dreizin and Mathias Unberath},
-      year={2024},
       eprint={2403.09827},
       archivePrefix={arXiv},
       primaryClass={eess.IV}
