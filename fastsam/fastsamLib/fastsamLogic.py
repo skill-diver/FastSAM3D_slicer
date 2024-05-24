@@ -247,11 +247,11 @@ class fastsamLogic(ScriptedLoadableModuleLogic):
             exclude_points = adjusted_exclude_points
             padded_data = np.pad(self.img, pad_width, 'constant')        
             minpoints,maxpoints = self.findboxcontainallpoints(include_points,exclude_points,padded_data)
-            #但裁完变成128x128x128
+            #after cropping 128x128x128
             inputimage = padded_data[minpoints[0]:maxpoints[0],minpoints[1]:maxpoints[1],minpoints[2]:maxpoints[2]]
             inputimage = inputimage[np.newaxis,np.newaxis,:,:,:]
             inputimage = self.torch.as_tensor(inputimage,dtype = self.torch.float32)
-            #根据源图片做的坐标。include根据input偏移了，include points exclude points 根据才出来的坐标重新定位
+            #source image coordinate include offset，include points exclude points relocate by the new coordinate
 
             offsets = [minpoints[i] for i in range(self.dimension)]
             adjusted_include_points = [[coord - offset for coord, offset in zip(point, offsets)] for point in include_points]
